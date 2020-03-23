@@ -3,12 +3,15 @@ import { CommonModule } from '@angular/common';
 
 import { ProjectsRoutingModule } from './projects-routing.module';
 import { ProjectsComponent } from './projects.component';
+import { MaterialModule } from '@workshop/material';
 
 @NgModule({
   imports: [
     CommonModule,
-    ProjectsRoutingModule
+    ProjectsRoutingModule,
+    MaterialModule
   ],
-  declarations: [ProjectsComponent]
+  declarations: [ProjectsComponent],
+  exports: [ProjectsComponent]
 })
 export class ProjectsModule { }
